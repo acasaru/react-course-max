@@ -4,6 +4,7 @@ import './App.css';
 import Person from './Person/Person'
 import UserOutput from './UserOutput/UserOutput';
 import UserInput from './UserInput/UserInput';
+import Radium from 'radium'
 
 class App extends Component {
   state={
@@ -60,7 +61,11 @@ class App extends Component {
       font:"inherit",
       border:"1px solid blue",
       padding: "8px",
-      margin: "5px"
+      margin: "5px",
+      ":hover":{
+        backgroundColor:"lightgreen",
+        color: "black"
+      }
     };
 
     let persons = null;
@@ -105,4 +110,4 @@ class App extends Component {
   }
 }
   
-export default App;
+export default Radium(App);
