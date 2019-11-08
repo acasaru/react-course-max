@@ -36,7 +36,7 @@ class App extends Component {
     persons[personIndex] = person;
 
     this.setState({persons:persons})
-    }
+  }
 
   usernameChangeHandler = (event) =>{
     this.setState({
